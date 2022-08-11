@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường thpt Trần Đại Nghĩa</title>
+    <link href="vidu/logo_thpttrandainghia.png" rel="shortcut icon"/>
+    <style>
+        body {
+            background-color: lightcyan;
+        }
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* phần đầu*/
+        header > h1 {
+           /*text-align: center;*/
+            color: darkblue;
+            /*text-shadow: 5px 5px 3px darkblue;*/
+        }
+        div.logo {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        div.logo > div {
+            width: 40%;
+        }
+        div.logo > div > a > img {
+            width: 80%;
+        }
+        div.logo > h1 {
+            color: darkblue;
+            text-shadow: 5px 5px 3px rgb(146, 146, 233);
+        }
+        ul.items {
+            font-size: 14px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: rgb(231, 159, 159);
+            display: flex;
+            
+        }
+        /*li {
+            border-radius: 20px 20px 20px 20px;
+        }*/
+        /*ul.items > li {
+            border-left: 1px solid white;
+            
+        }*/
+        ul.items > li > a {
+            color: black;
+            display: block;/*tạo thành 1 khối*/
+            padding: 20px;/* noi dung giua chu voi phan khoi block vua chinh*/
+            text-decoration: none;
+        }
+        ul.items > li > a:hover {
+            color: white;
+            background-color: blue;
+            /*border-radius: 20px 20px 20px 20px;/*bo tròn góc vuông của boder khi hover lên mới thấy*/
+        }
+        ul.items > li:last-child {
+            margin-left: auto;
+        }
+        .subcon {
+            display: none !important;
+            position: absolute;
+        }
+        /*.subs:hover .subcon {
+            display: block;/* hien ra the block*/
+       /* }*/
+        ul.items > li:hover .subcon {
+            display: block !important;/*tuong duong cai tren*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <!-- <div>
+                <img src="vidu/toplogo.png" alt="TRƯỜNG THPT TRẦN ĐẠI NGHĨA"/>
+            </div>-->
+            <div><!--sử dụng link của trang web trường của mình thiết kế-->
+                <a href="http://trandainghia.edu.vn/"><img src="vidu/logotruong.jpg" alt="TRƯỜNG THPT TRẦN ĐẠI NGHĨA"/></a>
+            </div>
+            <h1>TRƯỜNG TRUNG HỌC PHỔ THÔNG TRẦN ĐẠI NGHĨA</h1>
+        </div>
+    </header>
+    <nav>
+        <ul class="items">
+            <li class="subs">
+                <a href="#" title="Giới thiệu">GIỚI THIỆU</a>
+                <ul class="items subcon"> <!--có chung items nên style cũng giống items-->
+                    <li>
+                        <a href="#">BAN GIÁM HIỆU</a>
+                    </li>
+                    <li>
+                        <a href="#">CÁN BỘ NHÂN VIÊN</a>
+                    </li>
+                    <li>
+                        <a href="#">LỊCH SỬ VỀ TRƯỜNG</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="subs">
+                <a href="#">TIN TỨC - SỰ KIỆN</a>
+                <!--<ul class="items subcon">
+                    <li>
+                        <a href="#">THÔNG BÁO MỚI</a>
+                    </li>
+                    <li>
+                        <a href="#">Tin tức</a>
+                    </li>
+                </ul>-->
+            </li>
+            <li class="subs">
+                <a href="#">TÀI NGUYÊN</a>
+                <ul class="items subcon">
+                    <li>
+                        <a href="#">BÀI GIẢNG</a>
+                    </li>
+                    <li>
+                        <a href="#">TÀI LIỆU</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="subs">
+                <a href="#">THỜI KHÓA BIỂU</a>
+                    <ul class="items subcon">
+                        <li>
+                            <a href="#">KHỐI 10</a>
+                        </li>
+                        <li>
+                            <a href="#">KHỐI 11</a> 
+                        </li>
+                        <li>
+                            <a href="#">KHỐI 12</a> 
+                        </li>
+                    </ul>
+                <!--<ul class="items subcon">
+                    <li>
+                        <a href="#">Thời khóa biểu</a>
+                    </li>
+                    <li>
+                        <a href="#">Lịch công tác của giáo viên</a>
+                    </li>
+                </ul>-->
+            </li>
+            <li class="subs">
+                <a href="#">TUYÊN DƯƠNG</a>
+                <ul class="items subcon">
+                    <li>
+                        <a href="#">CÁN BỘ NHÂN VIÊN</a>
+                    </li>
+                    <li>
+                        <a href="#">HỌC SINH</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="subs">
+                <a href="#">OLYMPIC</a>
+                <!--<ul class="items subcon">
+                    <li>
+                        <a href="#">OLP TOÁN</a>
+                    </li>
+                    <li>
+                        <a href="#">OLP NGỮ VĂN</a>
+                    </li>
+                    <li>
+                        <a href="#">OLP ENGLISH</a>
+                    </li>
+                    <li>
+                        <a href="#">OLP VẬT LÝ</a>
+                    </li>
+                    <li>
+                        <a href="#">OLP HÓA HỌC</a>
+                    </li>
+                    <li>
+                        <a href="#">OLP SINH HỌC</a>
+                    </li>
+                    <li>
+                        <a href="#">OLP LỊCH SỬ</a>
+                    </li>
+                    <li>
+                        <a href="#">OLP ĐẠI LÝ</a>
+                    </li>
+                    <li>
+                        <a href="#">OLP GIÁO DỤC CÔNG DÂN</a>
+                    </li>
+                </ul>-->
+            </li>
+            <li class="subs">
+                <a href="#">ĐĂNG NHẬP</a>
+                <ul class="items subcon">
+                    <li>
+                        <a href="#">HỌC SINH</a>
+                    </li>
+                    <li>
+                        <a href="#">CÁN BỘ</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

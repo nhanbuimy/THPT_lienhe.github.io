@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNTT</title>
+    <link href="anh/ou.png" rel="shortcut icon"/>
+    <link href="css/vd.css" rel="stylesheet"/>
+    <style>
+        nav.vidu {
+            display: none;
+        }
+        nav.vidu > div:hover {
+            display: block;
+        }
+        input {
+            text-decoration: solid;
+            margin-bottom: 20px;
+        }
+        div.obj {
+            display: inline-block;
+            background-color: blue;
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+    <script>
+        src="https://code.jquery.com/jquery-3.2.1.js"
+    </script>
+    <script>
+        function giaiPtB1() {
+            var a = document.getElementById("aId").value
+            var b = document.getElementById("bId").value
+
+
+            a = parseFloat(a)
+            b = parseFloat(b)
+
+            if(a == 0)
+            {
+                if(b == 0)
+                    alert("VO SO NGHIEM")
+                else
+                    alert("VO NGHIEM")
+            }
+            else {
+                alert("Nghiem x = " +(-b/a))
+            }
+        }
+
+        function doiMaunen(obj)
+        {//value luon luon co trong input
+            var color = obj.value
+            //var color = document.getElementById("colorName").value // lay cai mau nguoi dung nhap
+            var body = document.getElementById("bodyId") // lay cai body ra de to mau, khong co value vi lay doi tuong
+            body.style.backgroundColor = color//propoty doi tuong trong js
+
+
+            //do ham nay xu ly tren chinh doi tuong ma minh muon lay nen co the doi onchange="doiMaunen(this"
+            // va doi var color = obj.value, dat 1 doi so trong ham doiMaunen(dat j cung duoc)
+        }
+
+
+        function init()
+        {
+            var c = document.getElementById("colorName")
+            c.style.border =  "2px solid red"//dung css border
+        }
+
+        function doiGiaodien()
+        {
+            var mau=document.getElementById("sangId").value;
+        }
+
+    </script>
+</head>
+<body id="bodyId" onload="init()">
+    <button id="sangId">Sang</button>
+    <button id="toiId">Toi</button>
+    <input type="text" id="colorName" placeholder="Nhap ten mau va enter" onchange="doiMaunen(this)"/>
+    <h1>ax + b = 0</h1>
+    <input type="text" id="aId" placeholder="a = " />
+    <input type="text" id="bId" placeholder="b = " />
+    <input type="button" value="GIAI" onclick="giaiPtB1()" />
+    <!--menu-->
+    <nav>
+        <ul class="menu">
+            <li class="sub">
+                <a href="#">Trang chu danh s</a>
+                <ul class="menu subcon">
+                    <li>
+                        <a href="#">Thiet ke web</a>
+                    </li>
+                    <li>
+                        <a href="#">Lap trinh OOP</a>
+                    </li>
+                    <li>
+                        <a href="#">Ky thuat lap trinh</a>
+                    </li>
+                    <li>
+                        <a href="#">Co so lap trinh</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Su kien</a> 
+            </li>
+            <li>
+                <a href="#">Tuyen duong</a>
+            </li>
+            <li>
+                <a href="#">Dang nhap</a> 
+            </li>
+        </ul>
+    </nav>
+    <nav class="vidu">
+        <div>Menu 1</div>
+        
+        <p>Menu 1.1</p>
+        
+        <div>Menu 2</div>
+    </nav>
+<!-- gắn link cho logo của trang trường, nhưng là link của trang mình sẽ thiết kế-->
+<a href="http://trandainghia.edu.vn/">
+    <img src="vidu/toplogo.png" alt="Trường trung học phổ thông Trần Đại Nghĩa"/>
+</a>
+    <section>
+        <div class="items">
+            <div class="item">
+                <h2>THIET KE WEBSITE</h2>
+                <div>
+                    <img src="anh/duong-toi-hung-cuong-tu-duy-bang-khoa-hoc-hanh-xu-bang-van-hoa.jpg" alt="web"/>
+                </div>
+                <div class="label">New</div>    
+            </div>
+            <div class="item">
+                <h1>THIET KE WEBSITE</h1>
+                <div>
+                    <img src="anh/duong-toi-hung-cuong-tu-duy-bang-khoa-hoc-hanh-xu-bang-van-hoa.jpg" alt="web"/>
+                </div>    
+            </div>
+            <div class="item">
+                <h1>THIET KE WEBSITE</h1>
+                <div>
+                    <img src="anh/duong-toi-hung-cuong-tu-duy-bang-khoa-hoc-hanh-xu-bang-van-hoa.jpg" alt="web"/>
+                </div>    
+            </div>
+            <div class="item">
+                <h1>THIET KE WEBSITE</h1>
+                <div>
+                    <img src="anh/duong-toi-hung-cuong-tu-duy-bang-khoa-hoc-hanh-xu-bang-van-hoa.jpg" alt="web"/>
+                </div>    
+            </div>
+            <div class="item">
+                <h1>THIET KE WEBSITE</h1>
+                <div>
+                    <img src="anh/duong-toi-hung-cuong-tu-duy-bang-khoa-hoc-hanh-xu-bang-van-hoa.jpg" alt="web"/>
+                </div>    
+            </div>
+            <div class="item">
+                <h2>THIET KE WEBSITE</h2>
+                <div>
+                    <img src="anh/duong-toi-hung-cuong-tu-duy-bang-khoa-hoc-hanh-xu-bang-van-hoa.jpg" alt="web"/>
+                </div>
+                <div class="label">New</div>    
+            </div>
+            <div class="item">
+                <h2>THIET KE WEBSITE</h2>
+                <div>
+                    <img src="anh/duong-toi-hung-cuong-tu-duy-bang-khoa-hoc-hanh-xu-bang-van-hoa.jpg" alt="web"/>
+                </div>
+                <div class="label">New</div>    
+            </div>
+            <div class="item">
+                <h2>THIET KE WEBSITE</h2>
+                <div>
+                    <img src="anh/duong-toi-hung-cuong-tu-duy-bang-khoa-hoc-hanh-xu-bang-van-hoa.jpg" alt="web"/>
+                </div>
+                <div class="label">New</div>    
+            </div>
+            <div class="item">
+                <h2>THIET KE WEBSITE</h2>
+                <div>
+                    <img src="anh/duong-toi-hung-cuong-tu-duy-bang-khoa-hoc-hanh-xu-bang-van-hoa.jpg" alt="web"/>
+                </div>
+                <div class="label">New</div>    
+            </div>
+            <div class="item">
+                <h2>THIET KE WEBSITE</h2>
+                <div>
+                    <img src="anh/duong-toi-hung-cuong-tu-duy-bang-khoa-hoc-hanh-xu-bang-van-hoa.jpg" alt="web"/>
+                </div>
+                <div class="label">New</div>    
+            </div>
+            <div class="item">
+                <h2>THIET KE WEBSITE</h2>
+                <div>
+                    <img src="anh/duong-toi-hung-cuong-tu-duy-bang-khoa-hoc-hanh-xu-bang-van-hoa.jpg" alt="web"/>
+                </div>
+                <div class="label">New</div>    
+            </div>
+        </div>
+    </section>
+    <div>
+        <button id="show">show</button>
+        <button id="hide">hide</button>
+        <button id="toggle">toggle</button>
+        <div class="obj"></div>
+
+    </div>
+</body>
+</html>
